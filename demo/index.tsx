@@ -1,13 +1,19 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import View from '../dist';
-import '../dist/css/index.css';
-// window.addEventListener('error', e => {
-//   // prompt user to confirm refresh
-//   if (/Loading chunk [\d]+ failed/.test(e.message)) {
-//     window.location.reload();
-//   }
-// });
+import Main from '../src';
+import MediaSource from './mediaSource';
+import Video from './video';
+
+const View = () => {
+  return (
+    <>
+      {/* <Main /> */}
+      <MediaSource />
+      <Video />
+    </>
+  );
+};
+
 ReactDOM.render(
   <React.StrictMode>
     <View />

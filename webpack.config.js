@@ -48,8 +48,9 @@ module.exports = env => {
         hot: true, // 模块热更新 loader会自动处理热更新，官网配置比较多，也说明了这一点
         host: 'localhost',
         proxy: {
-          '/live': {
-            target: 'https://testdevlive.xylink.com',
+          '/netfix': {
+            // target: 'http://prd-vodcdn.xylink.com',
+            target: 'http://nickdesaulniers.github.io',
             changeOrigin: true,
           },
         },
@@ -177,8 +178,8 @@ module.exports = env => {
           ],
         },
         {
-          test: /\.(woff|woff2|eot|ttf|otf)$/,
-          type: 'asset/inline',
+          test: /\.(woff|woff2|eot|ttf|otf|mp4)$/,
+          type: 'asset/resource',
         },
         // {
         //   test: /\.(js|jsx)$/,
