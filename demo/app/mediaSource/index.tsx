@@ -1,11 +1,11 @@
 import React, { useCallback, useEffect, useRef } from 'react';
 import style from './index.module.scss';
-// import mp4Url from './assets/1.mp4';
+import mp4Url from '../assets/1.mp4';
 // const mp4Url = '/vodfiles/sharefiles/ff808081526e509201527780a6b10010/s/live/9680e1d67fbc749d0180801905063f0e/202205/01225238/ab8d15a6-113a-4c22-af22-0adc212d36f6.mp4';
-const mp4Url = '/netfix/demo/frag_bunny.mp4';
+// const mp4Url = '/netfix/demo/frag_bunny.mp4';
 
-const mimeCodec = 'video/mp4; codecs="avc1.42E01E, mp4a.40.2"';
-// const mimeCodec = 'video/mp4; codecs="avc1.42001E, mp4a.40.2"';
+// const mimeCodec = 'video/mp4; codecs="avc1.42E01E, mp4a.40.2"';
+const mimeCodec = 'video/mp4; codecs="mp4a.40.2, avc1.64001f"';
 
 const IndexView = () => {
   const videoRef = useRef<HTMLVideoElement | null>(null);

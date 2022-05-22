@@ -1,15 +1,15 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import Main from '../src';
-import MediaSource from './mediaSource';
-import Video from './video';
+import MediaSource from './app/mediaSource';
+import Video from './app/video';
 
 const View = () => {
   return (
     <>
       {/* <Main /> */}
       <MediaSource />
-      <Video />
+      {/* <Video /> */}
     </>
   );
 };

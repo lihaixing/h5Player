@@ -178,7 +178,7 @@ module.exports = env => {
           ],
         },
         {
-          test: /\.(woff|woff2|eot|ttf|otf|mp4)$/,
+          test: /\.(woff|woff2|eot|ttf|otf|mp4|vtt)$/,
           type: 'asset/resource',
         },
         // {
